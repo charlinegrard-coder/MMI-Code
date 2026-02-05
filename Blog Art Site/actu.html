@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordeaux Musique Moderne</title>
+    
+    <!-- Polices et Icones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tes CSS -->
+    <link rel="stylesheet" href="CSS/actu.css"> 
+    <link rel="stylesheet" href="CSS/header.css"> 
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+<body>
+
+    <!-- L'emplacement où le header va apparaître -->
+    <div id="header-placeholder"></div>
+
+<div class="container container-actu py-5">
+    <h1 class="titre-page">Actualités</h1>
+
+    <section class="mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <p class="news-date">Janvier 2026</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Diam ut nunc quam pellentesque. Leo leo vulputate enim natoque. Netus at nulla elementum tellus nulla rhoncus gravida leo pulvinar.</p>
+            </div>
+            <div class="col-md-7">
+                <div class="carre-bleu h-medium"></div> </div>
+        </div>
+        <div class="text-center mt-4">
+             <a href="article.html" class="btn-lire-plus">Lire plus</a>
+        </div>
+        <div class="separator"></div>
+    </section>
+
+    <section class="mb-5">
+        <div class="grid-escalier">
+            <div class="carre-bleu h-small" style="width: 85%;"></div> <div class="carre-bleu img-decalee"></div> </div>
+        <div class="mt-4">
+            <p class="news-date">Janvier 2026</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Lectus gravida quis lacus luctus libero congue sed enim. Amet orci pretium nisi turpis dolor massa venenatis ut. Ullamcorper fames nunc pretium est consectetur massa vestibulum eget elit.</p>
+        </div>
+        <div class="text-center mt-4">
+             <a href="#" class="btn-lire-plus">Lire plus</a>
+        </div>
+        <div class="separator"></div>
+    </section>
+
+    <section class="mb-5">
+        <div class="carre-bleu h-large mb-4"></div> <p class="news-date">Janvier 2026</p>
+        <p>Amet orci pretium nisi turpis dolor massa venenatis ut. Ullamcorper fames nunc pretium est consectetur massa vestibulum eget elit. Suspendisse eros felis risus enim ut feugiat condimentum at senectus.</p>
+        <div class="text-center mt-4">
+            <a href="#" class="btn-lire-plus">Lire plus</a>
+        </div>
+        <div class="separator"></div>
+    </section>
+
+    <section class="mb-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="carre-bleu h-medium"></div> <p class="news-date mt-3">Janvier 2026</p>
+                <p class="small">Lorem ipsum dolor sit amet consectetur. Lectus gravida quis lacus luctus libero congue sed enim.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="carre-bleu h-medium"></div> <p class="news-date mt-3">Janvier 2026</p>
+                <p class="small">Lorem ipsum dolor sit amet consectetur. Lectus gravida quis lacus luctus libero congue sed enim.</p>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="#" class="btn-lire-plus">Lire plus</a>
+        </div>
+        <div class="separator"></div>
+    </section>
+</div>
+  
+    <!-- L'emplacement où le footer va apparaître -->
+    <div id="footer-placeholder"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Charger le header
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Charger le footer
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

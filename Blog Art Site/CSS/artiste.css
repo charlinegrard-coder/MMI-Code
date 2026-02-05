@@ -1,0 +1,56 @@
+
+.hero-banner {
+position: relative;
+width: 100%;
+height: 40vh;
+background-color: #72add1;
+/* On utilise le nouveau nom plus simple */
+/* Le ../ sert à sortir du dossier CSS pour entrer dans le dossier image */
+background-image: url('../image/♥.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+
+
+
+.carre-bleu-media {
+    width: 100%;           /* Prend toute la largeur de la colonne */
+    aspect-ratio: 1 / 1;    /* Force la forme CARRÉ (comme avant) */
+    object-fit: cover;      /* Remplis le carré sans écraser l'image */
+    display: block;
+    background-color: #72add1; /* Ton bleu s'affichera si l'image est manquante */
+}
+
+.album-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+}
+
+.artiste-name {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.album-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0;
+    color: #000;
+    line-height: 1.2;
+}

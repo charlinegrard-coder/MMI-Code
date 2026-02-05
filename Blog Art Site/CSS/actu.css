@@ -1,0 +1,66 @@
+
+
+.container-actu {
+max-width: 1200px;
+margin: 150px;
+font-family: 'Arial', sans-serif;
+        }
+
+        .titre-page {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+
+        /* TES CARRÉS BLEUS */
+        .carre-bleu {
+            background-color: #72add1;
+            width: 100%;
+            display: block;
+        }
+
+        .news-date {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* BOUTON LIRE PLUS */
+        .btn-lire-plus {
+            background-color: #041843;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-lire-plus:hover {
+            background-color: #1a36e3;
+            color: white;
+        }
+
+        .separator {
+            margin: 60px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        /* LAYOUTS SPÉCIFIQUES */
+        .grid-escalier {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        /* Ajustement des hauteurs pour tes images */
+        .h-large { height: 350px; }
+        .h-medium { height: 250px; }
+        .h-small { height: 200px; }
+        
+        /* Décalage pour le style en "L" */
+        .img-decalee {
+            margin-top: 50px;
+            height: 280px;
+        }

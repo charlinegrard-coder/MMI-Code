@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordeaux Musique Moderne</title>
+
+    <!-- Polices et icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/discover.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- SECTION HERO -->
+        <section class="hero">
+            <div id="heroCarousel" class="carousel slide carousel-background" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="image/concert.png" class="d-block w-100 h-100" alt="Concert 1">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="image/concert2.png" class="d-block w-100 h-100" alt="Concert 2">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="image/concert3.png" class="d-block w-100 h-100" alt="Concert 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-overlay"></div>
+
+            <div class="title-section">
+                <p class="subtitle">Bordeaux à travers</p>
+                <h1>LA MUSIQUE <span>Moderne</span></h1>
+            </div>
+        </section>
+
+        <!-- SECTION STYLES -->
+        <section class="styles-musique">
+            <h2 class="titre-principal">STYLES DE MUSIQUE</h2>
+
+            <div class="conteneur-flex">
+                <div class="bloc-texte texte-gauche">
+                    <p>
+                        Ici, pas juste de la musique : des trajectoires.<br>
+                        Des artistes qui tracent leur propre route, des sons bruts,
+                        des visions fortes, et une culture qui se construit en temps réel.
+                    </p>
+                </div>
+
+                <div class="centre-visuel">
+                    <img src="image/tv2.png" alt="TV musique" class="image-centrale">
+                    <img src="image/onde.png" alt="Onde sonore" class="onde-hero">
+                </div>
+
+                <div class="bloc-texte texte-droite">
+                    <p>
+                        Ce qui bouge, ici.<br>
+                        Des voix nouvelles,<br>
+                        une énergie brute, aucun compromis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="genres-footer">
+                <div class="ligne-haut">
+                    <span>ELECTRO</span>
+                    <span>RAP</span>
+                </div>
+                <div class="ligne-bas">
+                    <span class="rock">ROCK</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION DÉCOUVRIR – VINYLES -->
+        
+        <section class="discover">
+
+            <img src="img/Dark Blue Paper Texture Textured Background Wallpaper Image For Free Download - Pngtree.png"
+            alt="" class="deco deco-paper-left">
+
+            <img src="img/red-paper.png"
+            alt=""   class="deco deco-red-diagonal"/>
+
+            <img src="img/star.png" alt="" class="deco deco-star star-top-left">
+            <img src="img/star.png" alt="" class="deco deco-star star-top-right">
+            <img src="img/star.png" alt="" class="deco deco-star star-bottom-right">
+
+            <div class="lace-strip">
+            <img src="img/red.png" alt="">
+            <img src="img/red.png" alt="">
+            <img src="img/red.png" alt="">
+            </div>
+
+            <div class="deco deco-lace-bottom">
+            <img src="img/redbas.png" alt="">
+            <img src="img/redbas.png" alt="">
+            <img src="img/redbas.png" alt="">
+            </div>
+            
+            <div class="discover-title">
+                
+                <img src="img/_ - 2026-01-29T094421.196.png"
+                alt="" class="deco deco-title-bg">
+                
+                <h1 class="title">DÉCOUVRIR DES ARTISTES</h1>
+                </div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel">
+
+                    <div class="vinyl-container">
+                        <div class="vinyl left" data-index="0" data-audio="audio/j999de.mp3">
+                            <img src="img/tht.png" alt="j999de">
+                            <p>j999de</p>
+                        </div>
+
+                    <div class="vinyl center" data-index="1" data-audio="audio/web.mp3">
+                        <img src="img/b.png" alt="Thats_web">
+                            <p>Thats_web</p>
+                        </div>
+
+                    <div class="vinyl right" data-index="2" data-audio="audio/Tvrzan.mp3">
+                        <img src="img/pleease.png" alt="TVRZAN">
+                            <p>TVRZAN</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="controls">
+                        
+                        <button class="arrow arrow-left" aria-label="Artiste précédent">◀</button>
+                            <div class="player-ui">
+
+                        <button class="cassette-btn" aria-label="Lecture musique">
+                            <img src="img/cassette.png" alt="Lire la musique">
+                        </button>
+
+                        <div class="audio-progress">
+                            <span class="time current">00:00</span>
+
+                            <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                            </div>
+
+                            <span class="time duration">00:00</span>
+                        </div>
+
+                        </div>
+
+                        <button class="arrow arrow-right" aria-label="Artiste suivant">▶</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <audio id="player"></audio>
+        </section>
+
+        <!-- SECTION ACTUALITÉS -->
+        <section class="container actualites py-5">
+            <h1 class="titre-section mb-5">Actualités</h1>
+
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="carre-bleu-grand"></div>
+
+                    <div class="d-flex justify-content-end gap-3 mt-2 mb-3">
+                        <span>6 <i class="bi bi-heart"></i></span>
+                        <span>7 <i class="bi bi-chat-square"></i></span>
+                    </div>
+
+                    <h2 class="h3 mb-3">Titre actualité</h2>
+                    <p class="texte-description">
+                        Contenu de l’actualité principale…
+                    </p>
+
+                    <div class="d-flex justify-content-end">
+                        <a href="actu.html" class="btn-index-actu">Voir la suite</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column gap-4">
+                    <div class="d-flex gap-3">
+                        <div class="carre-bleu-petit"></div>
+                        <div>
+                            <h4 class="h6 fw-bold">Titre</h4>
+                            <p class="small mb-0">Résumé court…</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="discover.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        fetch('includes/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+
+</body>
+</html>

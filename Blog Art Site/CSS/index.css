@@ -1,0 +1,265 @@
+
+/* --- SECTION HERO --- */
+.hero {
+    width: 100%;
+    height: 100vh; /* Toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Titre en bas */
+    position: relative;
+    overflow: hidden;
+    padding: 60px;
+}
+
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.carousel-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    z-index: 2;
+}
+
+/* --- SECTION TITRE --- */
+.title-section {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    font-family: 'Karantina', sans-serif; /* Utilise ta police importée */
+}
+
+.subtitle {
+    font-size: 40px;
+    margin-bottom: -15px;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.title-section h1 {
+    font-size: clamp(80px, 15vw, 200px);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+.title-section h1 span {
+    display: block;
+    font-size: clamp(30px, 6vw, 80px);
+    color: #ffc342;
+    text-align: right;
+    margin-top: -10px;
+    width: 1045px;
+    padding: 10px;
+    font-size: 300px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .main-header { height: 70px; }
+    .logo-box { flex: 0 0 100px; }
+    .light a { font-size: 14px; }
+    .title-section h1 { font-size: 80px; }
+    .hero { padding: 20px; }
+}
+
+
+
+
+
+
+
+
+/* 1. Imports regroupés (plus propre) */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Oswald:wght@700&display=swap');
+
+/* 2. Style Global de la section */
+.styles-musique {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 20px; /* Un peu plus d'espace */
+    text-align: center;
+    overflow: hidden; /* Empêche l'image de dépasser de la page */
+    position: relative;
+}
+
+/* 3. Titre Principal (Magazine Style) */
+.titre-principal {
+    font-size: clamp(4rem, 12vw, 9rem); /* Taille fluide selon l'écran */
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+/* 4. Conteneur Flex */
+.conteneur-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 600px; /* Hauteur minimale pour le contenu */
+}
+
+/* 5. Blocs de texte latéraux */
+.bloc-texte {
+    width: 25%; /* Augmenté légèrement pour la lisibilité */
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    z-index: 5; /* Passe devant l'onde */
+}
+
+.texte-gauche { 
+    font-family: 'Archivo Black', sans-serif;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.texte-droite { 
+    font-family: 'Archivo Black', sans-serif;
+    text-align: right;
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+/* 6. Zone centrale avec l'image */
+.centre-visuel {
+    position: relative;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onde-hero {
+    position: absolute;
+    top: 20%;
+    left: 170%;
+    transform: translate(-50%, -50%); /* Centrage parfait */
+    width: 600px; /* Taille de l'image */
+    height: auto;
+    opacity: 0.8;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* 7. Footer Styles (Electro, Rap, Rock) */
+.genres-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.ligne-haut {
+    display: flex;
+    gap: 40px;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: white;
+}
+
+.ligne-bas {
+    margin-top: -15px;
+}
+
+.rock {
+    color: #ff0000;
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 0.8;
+    font-weight: bold;
+}
+
+/* 8. Responsive */
+@media (max-width: 1024px) {
+    .conteneur-flex {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .bloc-texte {
+        width: 80%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .centre-visuel {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .onde-hero {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Style global */
+.actualites {
+    font-family: 'Arial', sans-serif; /* Ou Archivo Black selon ton choix */
+}
+
+.titre-section {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.carre-bleu-grand {
+    width: 100%;
+    height: 450px; /* Ajuste cette hauteur selon ton besoin */
+    background-color: #72a9d1;
+}
+
+.carre-bleu-petit {
+    width: 130px;
+    height: 120px;
+    background-color: #72add1;
+    flex-shrink: 0; /* Important : empêche le carré de rétrécir si le texte est long */
+}
+
+/* Texte */
+.texte-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.btn-index-actu{
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-index-actu:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Pour les icônes de likes (si tu utilises Bootstrap Icons) */
+.icons-demo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

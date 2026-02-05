@@ -1,0 +1,127 @@
+/* --- HEADER PRINCIPAL --- */
+.main-header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* BLOC LOGO */
+/* Ajoute ou modifie ceci dans header.css */
+
+.logo-box {
+  background-color: #d12119; /* Force le carré du logo en rouge */
+  flex: 0.5;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cette classe que tu avais déjà, assure-toi qu'elle applique bien le rouge sur tout le header */
+.main-header.article-header-bg {
+  background-color: #d12119; 
+  position: relative; /* Sur l'article, il vaut mieux qu'il pousse le contenu plutôt que d'être au-dessus */
+}
+
+.logo {
+  width: 70%;
+  max-width: 90px;
+}
+
+/* CONTENEUR DE LA NAVIGATION */
+.nav-menu {
+  display: flex;
+  flex: 2; /* Prend tout l'espace central */
+  height: 100%;
+}
+
+/* CHAQUE CARRÉ DE LIEN */
+.nav-link {
+  flex: 1; /* Chaque lien prend la même largeur */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff; /* Texte blanc par défaut */
+  background-color: #d12119; 
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  /* Séparation subtile entre les liens */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ÉTAT SÉLECTIONNÉ + SURVOL */
+.nav-link.active,
+.nav-link:hover {
+  background-color: #ffffff; /* Fond blanc */
+  color: #d12119; /* Texte rouge */
+  border-right: none;
+}
+
+/* BLOC RECHERCHE */
+.search-box {
+  background-color: rgba(0, 14, 120, 0.8);
+  flex: 0.5;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    height: 70px;
+  }
+
+  .nav-link {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+  }
+
+  .logo-box {
+    min-width: 80px;
+  }
+}
+
+/* Fond rouge par défaut pour article header usage — peut être overriden */
+.main-header.article-header-bg {
+  background-color: #d12119;
+}
+
+/* Décaler le reste de la page pour laisser la place au header */
+.article-container {
+  padding-top: 120px;
+}
+
+

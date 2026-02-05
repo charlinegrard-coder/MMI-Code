@@ -1,0 +1,84 @@
+
+/* Configuration Générale */
+.article-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.image-placeholder {
+  background-color: #72add1; /* Ton bleu d'emplacement */
+  width: 100%;
+}
+
+/* Header : Titre à gauche, Image à droite */
+.article-header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.article-title {
+  color: #1a36e3; /* Bleu électrique comme ton titre */
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.meta-top { margin-top: 60px; }
+.date-big { font-weight: bold; font-size: 1.2rem; margin-bottom: 20px; }
+
+.author-small { display: flex; align-items: center; gap: 10px; font-size: 0.8rem; }
+.avatar-small { width: 40px; height: 40px; background: #ddd; border-radius: 50%; }
+
+.main-img { height: 350px; }
+
+/* Corps de l'article */
+.article-body p {
+  margin-bottom: 30px;
+  max-width: 600px; /* Le texte ne prend pas toute la largeur pour rester lisible */
+}
+
+.mid-img {
+  height: 300px;
+  margin: 40px 0;
+}
+
+/* Footer : Profil et Grille */
+.article-footer {
+  margin-top: 80px;
+  border-top: 1px solid #ddd;
+  padding-top: 40px;
+}
+
+.author-big {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.avatar-big { width: 100px; height: 100px; background: #ddd; border-radius: 50%; }
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-img { height: 150px; }
+
+
+/* Footer Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
